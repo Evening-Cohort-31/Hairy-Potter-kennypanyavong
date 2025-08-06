@@ -13,6 +13,7 @@ export const toSellOrNotToSell = (firedPottery) => {
     }
 
     uncrackedPottery.push(pricedPottery)
+
     return pricedPottery
 }
 
