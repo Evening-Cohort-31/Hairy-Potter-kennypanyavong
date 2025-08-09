@@ -120,12 +120,12 @@ In the `main.js` module, invoke the `PotteryList` component function. Take its r
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
 1. Explain how you got the HTML, with the correct data, displayed in the browser?
-   > Your answer here
+   > First, a potteryObject is created using makePottery() from the PotteryWheel module. Next, in the Kiln module, the pottery object is updated with new properties of "fired" and whether "cracked" is true or false. In the PotteryCatalog module, the object is assigned another property of price using filters based on the "cracked" and "weight" value. Those filtered objects are added to an array and exported as usePottery(). Next, the array from usePottery() is iterated over with potteryList() and each object is converted into an HTML string. Finally, the generated HTML is rendered to the DOM so that the pottery items are shown on the web page.
 2. In the **PotteryList** module, when you iterate your pottery, you need to show the evidence of what the **weight** property's value is for the 2nd piece of pottery. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > https://www.loom.com/share/8201fa5f2a4b4ecf84d4cf5283c97254?sid=1d0a4db0-99a1-427a-8525-26c2a0cfc4dc
 3. The **PotteryWheel** module has a single function named `makePottery`. Why doesn't that module have all of the other code in it?
-   > Your answer here
+   > Including all of the other code from the other functions in the makePottery function would make the code hard to manage. By modularizing the modules, each function has a set job to complete. This will keep the code organized, easier to manage and debug.
 4. The pottery shop has learned that there is a set of customers that are willing to buy cracked pottery at a discounted price of $2.50. That means that the cracked pottery should now be displayed in the catalog. Explain the changes that this new business strategy would cause to your algorithm.
-   > Your answer here
+   > Currently, all pottery objects with a cracked value of true, are excluded and not added to the array that is used to generate the HTML for display. Instead, the logic in the code that filters and assigns prices will need to be updated.
 5. In the **Kiln** module, you have a `firePottery()` function. You need to demonstrate how to use the debugger to verify the values of the parameters for that function when your code runs. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > https://www.loom.com/share/e24fbba19b5a4716ac96859e3af2fc22?sid=1a586610-cde7-4c21-9e17-deb3e3fec2f2
